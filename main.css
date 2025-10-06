@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.homepage {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('../img/coffee-bean-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header-index { 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
+    height: 100vh;
+    padding-left: 5%;
+}
+.header-index h1 {
+    font-size: 72px;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 2px;
+}   
+.header-index p {
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0.8rem 0 1.5rem 0;
+    letter-spacing: 1px;
+}
+.header-btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  color: #fff;
+  border: 2px solid #fff;   
+  border-radius: 25px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.header-btn:hover {
+  background: #fff;     
+  color: #000;          
+}
+.main-content {
+    background: #f8f3ed; 
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap; 
+}
+.promo-box, .contact-box {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    flex: 1;            
+    background: #fbe5cce5;
+    padding: 25px 30px;    
+    max-width: 450px;       
+    min-width: 320px;       
+}
+.promo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.promo-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.order-btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    color:  #2c1810;;
+    border: 1px solid ;   
+    border-radius: 25px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.order-btn:hover {
+    background:#f5ebdc66;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.contact-box h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 400;
+    color: #2c1810;
+}
+.contact-box p {
+    font-size: 15px;
+    margin-bottom: 2px;
+    line-height: 1.6;
+    color: #2c1810;
+}
+.map-embed {
+    margin-top: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+.map-embed iframe {
+    width: 100%;
+    height: 220px;
+    border: none;
+    display: block;
+}
+.header-events {
+    text-align: center;
+    color: #fff;
+    padding: 40px 15px;
+    font-size: 2rem;
+    font-style: italic;
+    background: linear-gradient(rgba(54, 35, 27, 0.9), rgba(39, 23, 9, 0.9)), url('../img/coffee-bean-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+body.event-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(rgba(98, 82, 77, 0.6)), url('../img/events-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.header-events span {
+    font-weight: bold;
+    font-style: normal;
+}
+.events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+.event-card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(251, 229, 204, 0.9);
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    gap: 10px;
+}
+.event-card img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.event-card h2, .event-card p {
+    margin: 1px 0;
+}
+.event-register-btn {
+    display: inline-block;
+    padding: 0.7rem 0.7rem;
+    width: 180px;
+    margin-top: 25px;
+    color:  #2c1810;;
+    border: 1px solid ; 
+    border-radius: 25px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.event-register-btn:hover {
+    background:rgba(245, 235, 220, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.header-menu {
+    text-align: center;
+    color: #fff;
+    padding: 35px 10px;
+    font-size: 1.375rem;
+    background: linear-gradient(rgba(54, 35, 27, 0.9), rgba(39, 23, 9, 0.9)), url('../img/coffee-bean-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+.menu-body {
+    color: #452414;
+    background-color: rgba(227, 208, 180, 0.6);
+}
+.main-menu {
+    flex-grow: 1;
+    padding: 3rem;
+}
+.menu-container {
+    flex-grow: 1;
+    max-width: 1280px;
+    margin: 1.5rem auto;
+}
+.menu-table {
+    width: 100%;
+}
+.menu-table td {
+    text-align: center;
+    margin: 1px;
+}
+.menu-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.menu-column {
+    flex: 1;
+    padding: 1.5rem 2rem;
+}
+.menu-column h2 {
+    font-size: 1.875rem;
+    color: #4a3826;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.image-container {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.menu-img {
+    width: 300px;
+    height: 220px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin: 1.5rem;
+    box-shadow: 0 10px 15px 6px rgba(87, 27, 27, 0.1);
+}
+.products-table {
+    width: 100%;
+    color: #4a3826;
+}
+.products-table tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-name {
+    padding: 0.25rem 0;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+}
+.dotted-line {
+    flex-grow: 1;
+    margin: 0 0.5rem;
+    border-bottom: 1px;
+}
+.product-price {
+    padding: 0.25rem 0;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #5a7a4a;
+}
+.order-notes {
+    margin: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #6a5847;
+}
+.order-notes p {
+    margin-bottom: 0.25rem;
+}
+footer {
+    background: #B5C4A7;
+    padding: 10px 80px;
+    margin-top: auto;
+}
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #2c1810;
+    gap: 20px;
+}
+.nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-icon img {
+    height: 50px;
+    width: auto;
+}
+.nav-link {
+    display: flex;
+    gap: 20px;
+}
+footer a {
+    color: #2c1810;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+footer a:hover {
+    opacity: 0.6;
+}
+footer span:last-child {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+    .header-index {
+        padding: 20px;          
+    }
+    .header-index h1 {
+        font-size: 36px;         
+    }
+    .header-index p {
+        font-size: 18px;       
+    }
+    .main-content {
+        flex-direction: column;  
+        align-items: center;
+        padding: 15px;
+        gap: 20px;
+    }
+    .header-menu {
+        font-size: 1.25rem;      
+        padding: 20px 10px;
+    }
+    .menu-column h2 {
+        font-size: 1.5rem;      
+        margin-bottom: 1rem;
+    }
+    .menu-img {
+        width: 100%;            
+        height: auto;
+        margin: 1rem 0;          
+    }
+    .products-table tr {
+        flex-direction: column;  
+        align-items: flex-start;
+        gap: 5px;                
+    }
+    .product-name, .product-price {
+        font-size: 1rem;         
+        padding: 0.2rem 0;
+    }
+    .order-notes {
+        font-size: 0.75rem;      
+        margin: 1rem;
+    }
+    .events {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        padding: 15px 10px;
+    }
+    .event-card {
+        padding: 12px;
+        gap: 8px;
+    }
+    .event-card h2 {
+        font-size: 1.25rem;
+    }
+    .event-card p {
+        font-size: 0.9rem;
+    }
+    .event-register-btn {
+        width: 100%;             
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+    footer {
+        padding: 15px 20px;
+    }
+    footer nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+    .nav-icon {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-link {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .nav-icon img {
+        height: 40px; 
+    }
+    footer a {
+        font-size: 18px;
+    }
+}
